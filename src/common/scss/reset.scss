@@ -1,0 +1,52 @@
+@import "import";
+
+html {
+  text-size-adjust: 100%;
+  font-size: 100 * (100vw / 750);
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 30rpx;
+  color: #8c8c8c;
+  background-color: #f7f7f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  @include setTapColor();
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+  appearance: none;
+  font-size: inherit;
+  @include setTapColor();
+}
+
+div,
+ul,
+header,
+label {
+  @include setTapColor();
+}

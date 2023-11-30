@@ -1,0 +1,8 @@
+// $staticDomain、$version 为 vite.config.ts 中定义的变量
+@function buildStaticUrl($fileName){
+  @return url($staticDomain + '/' + $fileName + '?v=' + $version)
+}
+
+@import "variable/global";
+@import "mixin/mobile";
+@import "mixin/text";
